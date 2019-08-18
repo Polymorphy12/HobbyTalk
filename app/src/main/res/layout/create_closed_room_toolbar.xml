@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#703800"
+        android:id="@+id/invite_toolbar"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/cc_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_back"/>
+
+            <TextView
+                android:id="@+id/invite_text"
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true"
+                android:textSize="9pt"
+                android:textColor="#ffffff"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="대화 상대 초대"
+                android:layout_toEndOf="@id/cc_back_button"/>
+
+            <TextView
+                android:id="@+id/create_chatroom_button"
+                android:layout_marginEnd="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="9pt"
+                android:text="확인"
+                android:gravity="center"
+                android:textColor="#999999"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

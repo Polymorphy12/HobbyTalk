@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9bbbd4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/chatListView"
+            android:transcriptMode="alwaysScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dividerHeight="4dp"
+            android:divider="#9bbbd4"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/editText_massage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="메세지를작성해주세요" />
+
+        <Button
+            android:background="#fef01b"
+            android:id="@+id/Button_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="전송" />
+    </LinearLayout>
+
+</LinearLayout>

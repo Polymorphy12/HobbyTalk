@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/textLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="1dp"
+
+                android:background="#777777" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내 프로필"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#777777" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/itemImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textLayout"
+            android:src="@drawable/default_profile_pic"/>
+            <!--app:civ_border_width="1dp"-->
+            <!--app:civ_border_color="#FF000000"/>-->
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/itemTitle"
+            android:layout_toEndOf="@id/itemImage"
+            android:layout_below="@id/textLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            android:text="닉네임"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="7dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/textLayout"
+            android:id="@+id/itemStatusMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:text="상태메시지"/>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/textLayout2"
+            android:layout_below="@id/itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="1dp"
+
+                android:background="#777777" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="친구 목록"/>
+            <View
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="1dp"
+
+                android:background="#777777" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

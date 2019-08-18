@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="방 제목 (30자 이내)"/>
+
+            <EditText
+                android:id="@+id/setRoomTitle"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/setRoomButton"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오픈톡 만들기"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

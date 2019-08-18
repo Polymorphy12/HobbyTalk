@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "806024123723",
+    "firebase_url": "https://openchat-39d32.firebaseio.com",
+    "project_id": "openchat-39d32",
+    "storage_bucket": "openchat-39d32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806024123723:android:3015349bdba53b06",
+        "android_client_info": {
+          "package_name": "com.example.sumin.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806024123723-vcgk5vs61f7kktcjaadug9n4lof7hkbo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7Nb0dFex9nkyMSB8sEVHjLzNhmU081ug"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

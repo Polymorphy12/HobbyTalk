@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#1155EE"
+            android:textSize="15pt"
+            android:text="프로필 사진"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#333333"
+            android:textSize="9pt"
+            android:text="사진 한 장을 골라주세요."/>
+        <LinearLayout
+            android:id="@+id/profile_image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:maxWidth="200dp"
+                android:maxHeight="200dp"
+
+                android:src="@drawable/default_profile_pic"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/profile_image"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:maxWidth="200dp"-->
+                <!--android:maxHeight="200dp"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:src="@drawable/default_profile_pic"/>-->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#119FFF"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진 선택"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userNickname_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/userNicknameText"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="10pt"
+                android:text="대화명"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/status_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="10pt"
+                android:text="상태메시지"/>
+            <TextView
+                android:id="@+id/status_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:layout_marginLeft="20dp"
+                android:textColor="#555555"
+                android:text="갈아넣자"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그아웃"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
